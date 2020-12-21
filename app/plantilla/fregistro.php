@@ -12,13 +12,13 @@ ob_start();
 	<h1>Registro de Usuario</h1>
 </div>
 Identificador: <input name="identificador" type="text"  required><br>
-<?=(isset($_GET['error']) && $_GET['error']=="identificador")?"<p>El identificador  no es valido<p>": "" ?>
+<?=(isset($_GET['error']) && $_GET['error']=="identificador")?"<p>El identificador  no cumple las normas<p>": "" ?>
 Nombre: <input name="nombre" type="text"  required><br>
-<?=(isset($_GET['error']) && $_GET['error']=="nombre")?"<p>El nombre no es valido<p>": "" ?>
+<?=(isset($_GET['error']) && $_GET['error']=="nombre")?"<p>El nombre no cumple las normas<p>": "" ?>
 Correo electronico: <input name="correo" type="text" required><br>
-<?=(isset($_GET['error']) && $_GET['error']=="correo")?"<p>El correo no es valido<p>": "" ?>
+<?=(isset($_GET['error']) && $_GET['error']=="correo")?"<p>El correo no cumple las normas<p>": "" ?>
 Contraseña:<input name="clave" type="password"  size=20  required>	<br>
-<?=(isset($_GET['error']) && $_GET['error']=="clave")?"<p>La clave no es valido<p>": "" ?>
+<?=(isset($_GET['error']) && $_GET['error']=="clave")?"<p>La clave no cumple las normas<p>": "" ?>
 Repetir Contraseña:<input name="claveRepetida" type="password"  size=20 required><br>
 <?=(isset($_GET['error']) && $_GET['error']=="claveRepetida")?"<p>La clave no es la misma<p>": "" ?>
 Plan :<br>

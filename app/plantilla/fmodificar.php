@@ -15,11 +15,11 @@ ob_start();
 </div>
 Identificador: <?=$id?> <br>
 Nombre:<input name="nombre" type="text" value="<?=$usuarios[1] ?>" required><br>
-<?=(isset($_GET['error']) && $_GET['error']=="nombre")?"<p>El correo no es valido<p>": "" ?>
+<?=(isset($_GET['error']) && $_GET['error']=="nombre")?"<p>El nombre no cumple las normas<p>": "" ?>
 Correo electronico: <input name="correo" type="text" value="<?=$usuarios[2] ?>" required><br>
-<?=(isset($_GET['error']) && $_GET['error']=="correo")?"<p>El correo no es valido<p>": "" ?>
+<?=(isset($_GET['error']) && $_GET['error']=="correo")?"<p>El correo no cumple las normas<p>": "" ?>
 Contraseña:<input name="clave" type="password" value="<?=$usuarios[0] ?>" size=20>	<br>
-<?=(isset($_GET['error']) && $_GET['error']=="clave")?"<p>La clave no es valido<p>": "" ?>
+<?=(isset($_GET['error']) && $_GET['error']=="clave")?"<p>La clave no cumple las normas<p>": "" ?>
 Estado :<br>
 <select name="estado" size="2">
 	<option value="A" <?=($_SESSION['tusuarios'][$id][4]=="A")?"selected":"" ?>>Activo</option>	
